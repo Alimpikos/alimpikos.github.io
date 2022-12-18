@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    background-color:#FDFCEF;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+h1 {
+    font-size: 50px;
+    width: 465px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+.introtext {
+    font-size: 18px;  
+    margin: 30px 0px;
+    width: 350px;
+}
+section {
+    padding-top: 120px;
+}
+p {
+    line-height: 1.36em;
+    margin: 0;
+}
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+.btn_2 {
+    background: #FF6861;
+    border-radius: 100px;
+    color: #FFFFFF;
+    padding: 22px 70px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    width: 227px;
+    transition: all 0.5s ease;
+}
+.btn_1 {
+    background: #FF6861;
+    border-radius: 100px;
+    color: #FFFFFF;
+    padding: 22px 70px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    width: 227px;
+    transition: all 0.5s ease;
+}
+.btn_2:hover {
+    background: #b84943;
+}
+.btn_1:hover {
+    background: #b84943;
+}
+.frame_13 {
+    margin-left: 180px;
+}
+.logo {
+    margin: 0 auto;
+}
+.offer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 82px;
+
+}
+
+.offer {
+    width: 465px;
+}
+.header {
+    padding-top: 60px;
+}
+.digit-item {
+    display: flex;
+    align-items: center;
+}
+.digit-title {
+    font-size: 30px;
+    margin-bottom: 11px;
+    width: 570px;
+}
+.digit-text {
+    font-size: 18px;
+    width: 550px;
+}
+.digit {
+    margin-right: 34px;
+}
+.digits {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    width: 720px;
+    margin: 70px auto 0 auto;
+}
+.practice-wrap {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 100px 125px 75px 122px;
+}
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.practice-wrap img {
+    animation: 5s linear 0s normal none infinite running rot;
+}
+.practice-title {
+    text-align: left;
+}
+.practice-text {
+    margin: 24px 0;
+    width: 350px;
+}
+.ladybug {
+    margin-left: 128px;
+}
+.footer {
+    padding: 120px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Responsive */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .offer-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn_1 {
+        margin-left: 120px;
+    }
+    .introtext {
+        width: auto;
+    }
+    .frame_13 {
+        margin: 0 auto;
+        margin-top: 51px;
+    }
+    .btn_2 {
+        margin: 0 auto;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .logo {
+        margin-left: 250px;
+        margin: 0 auto;
+    }
+    .practice-wrap {
+        flex-direction: column;
+        padding: 101px 144px;
+    }
+    .practice-title {
+        text-align: center;
+    }
+    .practice-text {
+        text-align: center;
+        margin-left: 40px;
+        width: 350px;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+    .ladybug {
+        margin: 0 auto;
+        margin-top: 101px;
+    }
+    .btn_2 {
+        margin: 0 auto;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .digit-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .digits {
+        width: auto;
+    }
+    .digit-text {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .logo {
+        margin-left: 150px;
+    }
+    .digit {
+        margin-right: 4px;
+    }
+    .practice-wrap {
+        padding: 101px 40px;
+    }
+    .btn_2 {
+        margin: 0 auto;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+    .btn_2 {
+        margin: 0 auto;
+    }
+}
